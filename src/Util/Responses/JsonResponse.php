@@ -27,7 +27,7 @@ class JsonResponse implements IResponse
         $this->_response->setStatusCode($statusCode);
         $this->_response->setContent(json_encode(
             [
-                'error' => $statusCode === 200 ? true : false,
+                'error' => $statusCode === 200 ? false : true,
                 'data' => $data,
             ]
         ));
