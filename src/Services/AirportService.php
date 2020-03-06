@@ -29,7 +29,7 @@ class AirportService
 
         if (isset($params['elevation_ft'])) {
             $airports = array_filter($airports, function ($airport) use($params) {
-                return $airport->elevation_ft == $params['elevation_ft'];
+                return $airport->elevation_ft >= $params['elevation_ft'];
             });
         }
 
