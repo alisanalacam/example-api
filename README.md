@@ -14,7 +14,6 @@ http://localhost:8080/airports
 ```
 
 Seçili tipdeki havayollarını görüntüleme
-
 ```
 http://localhost:8080/airports?type=heliport
 ```
@@ -28,3 +27,4 @@ Hem tip hem de yükseklif fit filtreli havayollarını görüntüleme
 ```
 http://localhost:8080/airports?elevation_ft=1100&type=heliport
 ```
+
